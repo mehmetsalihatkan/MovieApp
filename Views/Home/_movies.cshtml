@@ -1,90 +1,24 @@
-<div class="card mb-3">
+@model IEnumerable<Movie>
+    @foreach (var movie in Model)
+    {
+       <div class="card mb-3">
+           <div class="row no-gutter">
     <div class="col-md-3">
-        <img src="~/img/2.jpg" alt="" class="card-img">
+        <img src="~/img/@movie.ImageUrl" alt="@movie.Description" class="card-img">
     </div>
     <div class="col-md-9">
         <div class="card-body">
-            <h5 class="card-title">High Life</h5>
+            <h5 class="card-title">@movie.Name</h5>
             <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nesciunt?
+               @movie.Description
             </p>
-            <p class="card text">
+            <p class="card-text">
                 <small class="text-muted">
                     3 days ago
                 </small>
             </p>
         </div>
     </div>
-</div>
-<div class="card mb-3">
-    <div class="col-md-3">
-        <img src="~/img/1.jpg" alt="" class="card-img">
-    </div>
-    <div class="col-md-9">
-        <div class="card-body">
-            <h5 class="card-title">High Life</h5>
-            <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nesciunt?
-            </p>
-            <p class="card text">
-                <small class="text-muted">
-                    3 days ago
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-<div class="card mb-3">
-    <div class="col-md-3">
-        <img src="~/img/1.jpg" alt="" class="card-img">
-    </div>
-    <div class="col-md-9">
-        <div class="card-body">
-            <h5 class="card-title">High Life</h5>
-            <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nesciunt?
-            </p>
-            <p class="card text">
-                <small class="text-muted">
-                    3 days ago
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-<div class="card mb-3">
-    <div class="col-md-3">
-        <img src="~/img/1.jpg" alt="" class="card-img">
-    </div>
-    <div class="col-md-9">
-        <div class="card-body">
-            <h5 class="card-title">High Life</h5>
-            <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nesciunt?
-            </p>
-            <p class="card text">
-                <small class="text-muted">
-                    3 days ago
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-<div class="card mb-3">
-    <div class="col-md-3">
-        <img src="~/img/1.jpg" alt="" class="card-img">
-    </div>
-    <div class="col-md-9">
-        <div class="card-body">
-            <h5 class="card-title">High Life</h5>
-            <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nesciunt?
-            </p>
-            <p class="card text">
-                <small class="text-muted">
-                    3 days ago
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
+</div></div>
+ 
+    }
