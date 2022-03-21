@@ -15619,13 +15619,33 @@
   "RootNamespace": "MovieApp",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\M.Salih\\Desktop\\MovieApp\\Views\\Shared\\_footer.cshtml",
+      "TargetPath": "Views\\Shared\\_footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\M.Salih\\Desktop\\MovieApp\\Views\\Movie\\Index.cshtml",
       "TargetPath": "Views\\Movie\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\M.Salih\\Desktop\\MovieApp\\Views\\Home\\_movies.cshtml",
+      "TargetPath": "Views\\Home\\_movies.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\M.Salih\\Desktop\\MovieApp\\Views\\Movie\\List.cshtml",
       "TargetPath": "Views\\Movie\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\M.Salih\\Desktop\\MovieApp\\Views\\Shared\\_navbar.cshtml",
+      "TargetPath": "Views\\Shared\\_navbar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\M.Salih\\Desktop\\MovieApp\\Views\\Shared\\_menu.cshtml",
+      "TargetPath": "Views\\Shared\\_menu.cshtml",
       "FileKind": "mvc"
     },
     {
