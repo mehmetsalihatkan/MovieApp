@@ -18,8 +18,8 @@ namespace MovieApp
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
-        {services.AddControllersWithViews();
-          
+        {
+            services.AddControllersWithViews();          
             }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,7 +30,7 @@ namespace MovieApp
                 app.UseDeveloperExceptionPage();
             }
 
-app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseStaticFiles();//wwwroot dosya yolunu dışarı açar.
             app.UseStaticFiles(new StaticFileOptions{
                 FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"node_modules")),
@@ -45,5 +45,6 @@ app.UseHttpsRedirection();
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+      
     }
 }
